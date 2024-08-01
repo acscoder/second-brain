@@ -1,0 +1,46 @@
+[package]
+name = "second-brain"
+version = "0.1.0"
+authors = ["acscoder-digitalonda <acscoder@digitalonda.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = "0.5", features = ["desktop", "router"] }
+
+# Debug
+tracing = "0.1.40"
+dioxus-logger = "0.5.0"
+ollama-rs = "0.1.9"
+tokio = { version = "1", features = ["full"] }
+tokio-util = "0.7.11"
+magic-crypt = "3.1.13"
+openai-api-rs = "4.0.9"
+anthropic = {path = "./lib/anthropic-rs/anthropic"}
+oasysdb = "0.6.0"
+pdf-extract = "0.7.7"
+tiktoken-rs = "0.5.9"
+chrono = "0.4.38"
+serde_json = "1.0.117"
+serde = "1.0.203"
+probly-search = {path="./lib/probly-search"}
+regex = "1.10.5" 
+rayon = "1.10.0"
+whichlang = "0.1.0"
+candle-core = { features = ["cuda"], version = "0.5.1" }
+candle-nn = {features = ["cuda"], version = "0.5.1"}
+candle-transformers = {features = ["cuda"], version = "0.5.1"}
+hf-hub = "0.3.2"
+anyhow = "1.0.86"
+tokenizers = "0.19.1"
+chat-templates = { path = "lib/chat-templates" }
+rake = "0.3.4"
+markdown = "0.3.0"
+dotext =  { path = "lib/dotext" }
+polars = "0.41.3"
+reqwest = { version = "0.12.5", features = ["blocking"] }
+striptags = { path = "lib/libstriptags" }
+tempfile = "3.10.1"
+ 
